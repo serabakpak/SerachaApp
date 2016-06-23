@@ -6,11 +6,11 @@ bad_word_dict = {'FUCK': 'EFF', 'BITCH': 'BIZNATCH', 'SHIT': 'SHIZNIT', 'ASSHOLE
 
 # Iterate through dictionary and replace all bad words in text.
 
-def replace_bad_words(text, dict):
-	text = text.upper()
-	for key in dict:
-		text = text.replace(key, dict[key])
-	return text		
+# def replace_bad_words(text, dict):
+# 	text = text.upper()
+# 	for key in dict:
+# 		text = text.replace(key, dict[key])
+# 	return text		
 
 
 # later on, going to rewrite own filter method to account for capilizations and punctuations
@@ -21,16 +21,16 @@ def replace_bad_words(text, dict):
 # append the word to a new list
 # join the words in the new list with a space.
 
-# def replace_bad_words(text, dict):
-# 	list_text = text.split()
-# 	new_list = []
-# 	for word in list_text:	
-# 		if word.lower() in dict.keys():
-# 			word = dict[word]			
-# 			print word
-# 		new_list.append(word)
-# 	print new_list
-# 	print " ".join(new_list)		
+def replace_bad_words(text, dict):
+	list_text = text.split()
+	new_list = []
+	for word in list_text:	
+		word = word.upper()
+		if word in dict.keys():
+			word = dict[word]			
+			print word
+		new_list.append(word)
+	return " ".join(new_list)		
 
-# replace_bad_words(test_text, bad_word_dict)
+
 
