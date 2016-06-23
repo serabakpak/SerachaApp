@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../static/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/grid.css">
+        <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:300,400,100,300italic' rel='stylesheet' type='text/css'>
+        <title>Guest Book</title>
+    </head>
+    <body>
+        <header class="section-messages">
+            <nav>
+                <div class="row">
+                    <ul class="main-nav">
+                        <li><a href="/#our-story">Our Story</a></li>
+                        <li><a href="/#event-details">Event Details</a></li>
+                        <li><a href="#">Guest Book</a></li>
+                        <li><a href="/#rsvp">RSVP</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="row">
+                <h2 id="guest-book">Guest Book</h2>
+            </div>
+            <div class="row">
+                <div class="col span-1-of-2 box">
+                {% for guest in guests %}
+                    <blockquote>
+                    {{ guest[0] }}
+                        <cite>{{ guest[1].upper() }}</cite>
+                    </blockquote>
+                    {% endfor %}
+                </div> 
+            </div>
+        </header>
+        <footer>     
+            <div class="row">
+                <p>
+                    Copyright &copy; 2016 by Seracha. All rights reserved.
+                </p>
+            </div>   
+        </footer>
+    </body>
+</html>
+
+
+

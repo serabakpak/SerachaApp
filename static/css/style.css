@@ -6,7 +6,6 @@
 /* BASIC SETUP */
 /* --------------------------------------------------------------- */
 
-
 * {
     margin: 0;
     padding: 0;
@@ -56,9 +55,7 @@ h2,
 h3  {
     
     font-weight: 300;
-    text-transform: uppercase;
-    
-   
+    text-transform: uppercase; 
 }
 
 h1 {
@@ -107,11 +104,7 @@ h2:after {
     line-height: 145%;
 }
 
-
-
-
 /* ----- BUTTONS ----- */
-
 
 .btn:link,
 .btn:visited,
@@ -161,7 +154,6 @@ input[type=submit]:active {
 
 /* ----- LINKS ----- */
 
-
 a:link,
 a:visited {
     color: #860900;
@@ -177,13 +169,11 @@ a:active {
     transition: border-bottom 0.2s, color 0.2s;
 }
 
-
 /* --------------------------------------------------------------- */
 /* HEADER */
 /* --------------------------------------------------------------- */
 
-
-header {
+.main-page {
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -196,10 +186,8 @@ header {
     width: 1140px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    
+    transform: translate(-50%, -50%);  
 }
-
 
 .main-nav {
     float: right;
@@ -220,8 +208,7 @@ header {
     text-transform: uppercase;
     font-size: 95%;
     border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s; 
-    
+    transition: border-bottom 0.2s;   
 }
 
 .main-nav li a:hover, 
@@ -233,12 +220,9 @@ header {
 /* OUR STORY */
 /* --------------------------------------------------------------- */
 
-.section-ourstory .long-copy {
+.section-our-story .long-copy {
     margin-bottom: 30px;
 }
-
-
-
 
 /* --------------------------------------------------------------- */
 /* PHOTOS */
@@ -288,68 +272,23 @@ header {
     background-color: #f4f4f4;
 }
 
-.event-details-box:first-child {
-    text-align: right;
-    padding-right: 3%;
-    margin-top: 30px;
-}
-
-.event-details-box:last-child {
-    padding-left: 3%;
-    margin-top: 70px;
-}
-
-
-
-.event-details {
-    margin-bottom: 50px;
-}
-
-.event-details:last-of-type {
-    margin-bottom: 80px;
-}
-
-/*
-.event-details div {
-    color: #860900;
-    border: 2px solid #860900;
-    display: inline-block;
-    border-radius: 50%;
-    height: 50px;
-    width: 55px;
-    text-align: center;
-    padding: 5px;
-    float: left;
-    font-size: 150%;
-    margin-right: 25px;
-}
-*/
 
 .event-details p {
     padding-top: 0;
     font-size: 110%;
 }
 
-/*
-.btn-app:link,
-.btn-app:visited {
-    border: 0;
-}
-
-.btn-app img {
-    height: 50px;
-    width: auto;
-    margin-right: 10px;
-}
-*/
-
-
 
 /* --------------------------------------------------------------- */
 /* GUEST BOOK */
 /* --------------------------------------------------------------- */
 
+#guest-book {
+    margin-top: 50px;
+}
+
 .section-messages {
+
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/c+s-preview-01A.jpg);
     background-size: cover; 
     color: #fff;
@@ -381,7 +320,6 @@ cite {
     display: block;
 }
 
-
 /* --------------------------------------------------------------- */
 /* RSVP FORM */
 /* --------------------------------------------------------------- */
@@ -411,7 +349,6 @@ input[type=checkbox] {
 
 *:focus {outline: none;} /*gets rid of blue border in input box*/
 
-
 /* --------------------------------------------------------------- */
 /* FOOTER */
 /* --------------------------------------------------------------- */
@@ -419,10 +356,7 @@ input[type=checkbox] {
 footer {
     background-color: #333333;
     padding: 50px;
-
 }
-
-
 
 footer p {
     color: #888;
